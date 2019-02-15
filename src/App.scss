@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+// main section
+// body{
+// 	background:#ebf7f6;
+// }
+/* navigation bar */
+.header{
+	display: block;
+	padding: 10px;
+	background: #3b5f5c;
+	h1{
+		font-size: 40px;
+		color:white;
+	}
+}
+
+
+// hero section
+.hero-section{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+// category section
+.category {
+	ul{
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+		li{
+			button{
+				margin:10px;
+				background: white;
+				border: 1px solid #3b5f5c;
+				font-size: 18px;
+				color: #3b5f5c;
+				padding: 10px 15px;
+				border-radius: 10px;
+				outline: none;
+				&:hover{
+					background: #3b5f5c;
+					color:white;
+				}
+			}
+		}
+	}
+}
+
+// news card
+.card{
+	display: grid;
+	grid-template-columns: 240px 1fr;
+	grid-gap: 20px;
+	padding: 20px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid #3b5f5cb4; 
+	img{
+		width: 240px;
+		height: 180px;
+	}
+	.detail{
+		position: relative;
+		a{
+			text-decoration: none;
+			h3{
+				font-size: 22px;
+				font-weight: 600;
+				font-family: 'Rubik', sans-serif;
+				color:#3b5f5c;
+				margin-bottom: 10px;
+			}
+		}
+		.description{
+			line-height: 1rem;
+			color:rgb(46, 47, 48);
+		}
+		.published{
+			position: absolute;
+			bottom: 0;
+			color:rgb(46, 47, 48);
+		}
+	}
+}
