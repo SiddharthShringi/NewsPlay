@@ -8,7 +8,7 @@ class NewsCard extends Component {
       <div className="card">
           <img src={urlToImage}></img>
           <div className="detail">
-            <a href={url}><h3>{title}</h3></a>
+            <a href={url} target="_blank"><h3>{title}</h3></a>
             <p className="description">{description}</p>
             <p className="published">{moment(publishedAt).format('LL')}</p>
           </div>
