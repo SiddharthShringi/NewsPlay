@@ -49,18 +49,20 @@ table {
 
 
 // main section
-// body{
-// 	background:#ebf7f6;
-// }
+body{
+	background:#000000;
+}
 /* navigation bar */
 .header{
 	display: block;
 	padding: 10px;
-	background: #3b5f5c;
+	background: #d1d409;
 	h1{
 		font-size: 40px;
-		color:white;
+		color:black;
+		font-family: 'Crimson Text', serif;
 	}
+
 }
 
 
@@ -80,16 +82,16 @@ table {
 		li{
 			button{
 				margin:10px;
-				background: white;
-				border: 1px solid #3b5f5c;
+				background: black;
+				border: 1px solid #d1d409;
 				font-size: 18px;
-				color: #3b5f5c;
+				color: #d1d409;
 				padding: 10px 15px;
 				border-radius: 10px;
 				outline: none;
 				&:hover{
-					background: #3b5f5c;
-					color:white;
+					background: #d1d409;
+					color:rgb(0, 0, 0);
 				}
 			}
 		}
@@ -116,18 +118,18 @@ table {
 				font-size: 22px;
 				font-weight: 600;
 				font-family: 'Rubik', sans-serif;
-				color:#3b5f5c;
+				color:#d1d409;
 				margin-bottom: 10px;
 			}
 		}
 		.description{
 			line-height: 1rem;
-			color:rgb(46, 47, 48);
+			color:rgb(165, 170, 166);
 		}
 		.published{
-			position: absolute;
+			position: absolute;font-family: 'Crifont-family: 'Crimson Text', serif;mson Text', serif;
 			bottom: 0;
-			color:rgb(46, 47, 48);
+			color:rgb(165, 170, 166);
 		}
 	}
 }
